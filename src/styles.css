@@ -1,7 +1,8 @@
 :root {
   --white: #fff;
   --light-grey: #f7f7f7;
-  --grey: #bbb;
+  --grey: #ccc;
+  --dark-grey: #666;
 }
 
 *,
@@ -14,15 +15,15 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 14px;
 }
 
 div.main-container {
   display: grid;
   grid-template-columns: 75% 25%;
-  column-gap: 1rem;
-  padding: 1rem 3.4rem;
-  background-color: #eee;
+  column-gap: 1.7rem;
+  padding: 1.7rem 7.1rem;
+  background-color: var(--light-grey);
 }
 
 
@@ -35,8 +36,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 1.9rem;
-  font-size: .7rem;
+  height: 4rem;
+  font-size: 1.3rem;
 }
 
 div.container-left {
@@ -46,24 +47,25 @@ div.container-left {
 
 div.container-left i.fa-bars,
 div.container-left i.fa-youtube {
-  margin-left: .9rem;
-  font-weight: 600;
+  margin-left: 1.7rem;
 }
 
 div.container-left span {
   position: relative;
-  margin-left: .1rem;
+  margin-left: .2rem;
+  font-weight: 800;
 }
 
 div.container-left i.fa-youtube {
-  font-size: .85rem;
+  font-size: 1.9rem;
   color: #f00;
 }
 
 div.container-left sup {
   position: absolute;
-  right: -15px;
-  font-size: .33rem;
+  top: -3px;
+  right: -16px;
+  font-size: .7rem;
   font-weight: 100;
 }
 
@@ -75,17 +77,17 @@ div.container-centre {
 }
 
 div.container-centre input[type="search"] {
-  height: 1.3rem;
-  width: 18rem;
-  padding: .2rem .4rem;
+  height: 2.8rem;
+  width: 39rem;
+  padding: .3rem 1rem;
   border: 1px solid var(--grey);
   border-radius: 2px 0 0 2px;
   outline: none;
 }
 
 div.container-centre button {
-  height: 1.3rem;
-  padding: 0 .7rem;
+  height: 2.8rem;
+  padding: .3rem 1.8rem;
   border: 1px solid var(--grey);
   border-left: none;
   border-radius: 0 2px 2px 0;
@@ -93,7 +95,7 @@ div.container-centre button {
 }
 
 div.container-centre i.fa-microphone {
-  margin-left: .9rem;
+  margin-left: 1.7rem;
 }
 
 /* div.container-right */
@@ -107,15 +109,15 @@ div.container-right i.fa-bell,
 div.container-right i.fa-th,
 div.container-right i.fa-video,
 div.container-right div.profile {
-  margin-right: .9rem;
+  margin-right: 1.7rem;
 }
 
 div.container-right div.profile {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
   background-color: #5c6bc0;
   color: #fff;
@@ -140,8 +142,7 @@ div.container-right div.profile {
 
 
 section.current-video {
-  height: 35rem;
-  background-color: #f00;
+  background-color: var(--light-grey);
 }
 
 section.current-video div.video-wrapper {
@@ -157,6 +158,120 @@ section.current-video iframe {
   height: 100%;
 }
 
+section.current-video div.video-description-wrapper-top {
+  display: flex;
+  justify-content: space-between;
+  height: 6.5rem;
+  border-bottom: 1px solid var(--grey);
+}
+
+div.video-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div.video-info h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+div.video-info p {
+  color: var(--dark-grey);
+}
+
+div.video-options {
+  display: flex;
+  align-items:flex-end;
+  padding-bottom: .8rem;
+  font-size: 1.2rem;
+}
+
+div.video-options span {
+  margin: 0 1.1rem 0 .4rem;
+  font-weight: 500;
+}
+
+div.likes:hover,
+div.dislikes:hover,
+div.share:hover,
+div.save:hover,
+div.more:hover {
+  cursor: pointer;
+}
+
+section.current-video div.video-description-wrapper-bottom {
+  border-bottom: 1px solid var(--grey);
+}
+
+div.uploader {
+  display: flex;
+  align-items: center;
+  height: 6.5rem;
+}
+
+div.uploader img {
+  height: 3.2rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+div.uploader p.profile-name {
+  margin-bottom: .2rem;
+  font-weight: 800;
+}
+
+div.uploader p.subscribers {
+  font-size: .9rem;
+  color: var(--dark-grey);
+}
+
+div.uploader button {
+  margin-left: auto;
+  padding: .6rem 1.2rem;
+  border: none;
+  background-color: #cc0000;
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+div.music-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 18rem;
+  width: 50%;
+  margin-left: 4.2rem;
+  border-top: 1px solid var(--grey);
+  font-weight: 800;
+}
+
+div.music-info table {
+  border-collapse: separate;
+  border-spacing: 0 .7rem;
+  text-align: left;
+}
+
+div.music-info table tr {
+  padding-bottom: 10rem;
+}
+
+div.music-info table th {
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+
+div.music-info span {
+  margin-bottom: .5rem;
+  color: var(--dark-grey);
+}
+
+div.uploader img,
+div.uploader p.profile-name,
+div.uploader button,
+div.music-info span {
+  cursor: pointer;
+}
 
 /******** Comments ********/
 
