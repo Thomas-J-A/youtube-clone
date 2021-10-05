@@ -1,10 +1,10 @@
 import React from 'react';
-import profilePic0 from '../../images/profile-pic0.jpg';
-import profilePic1 from '../../images/profile-pic1.jpg';
-import profilePic2 from '../../images/profile-pic2.jpg';
-import profilePic3 from '../../images/profile-pic3.jpg';
-import profilePic4 from '../../images/profile-pic4.jpg';
-import profilePic5 from '../../images/profile-pic5.jpg';
+import profilePic0 from '../../images/profile-pics/profile-pic0.jpg';
+import profilePic1 from '../../images/profile-pics/profile-pic1.jpg';
+import profilePic2 from '../../images/profile-pics/profile-pic2.jpg';
+import profilePic3 from '../../images/profile-pics/profile-pic3.jpg';
+import profilePic4 from '../../images/profile-pics/profile-pic4.jpg';
+import profilePic5 from '../../images/profile-pics/profile-pic5.jpg';
 
 const UserComments = () => (
   <div className="user-comments">
@@ -21,7 +21,7 @@ const UserComments = () => (
         <i className="far fa-thumbs-down" />
         <span className="reply">REPLY</span>
       </div>
-      <i className="fas fa-ellipsis-v report" />
+      {/* <i className="fas fa-ellipsis-v report" /> */}
     </div>
 
     <div className="comment">
@@ -37,7 +37,7 @@ const UserComments = () => (
         <i className="far fa-thumbs-down" />
         <span className="reply">REPLY</span>
       </div>
-      <i className="fas fa-ellipsis-v" />
+      {/* <i className="fas fa-ellipsis-v" /> */}
     </div>
 
     <div className="comment">
@@ -57,7 +57,7 @@ const UserComments = () => (
           <span>View reply</span>
         </div>
       </div>
-      <i className="fas fa-ellipsis-v" />
+      {/* <i className="fas fa-ellipsis-v" /> */}
     </div>
 
     <div className="comment">
@@ -73,7 +73,7 @@ const UserComments = () => (
         <i className="far fa-thumbs-down" />
         <span className="reply">REPLY</span>
       </div>
-      <i className="fas fa-ellipsis-v" />
+      {/* <i className="fas fa-ellipsis-v" /> */}
     </div>
 
     <div className="comment">
@@ -89,7 +89,7 @@ const UserComments = () => (
         <i className="far fa-thumbs-down" />
         <span className="reply">REPLY</span>
       </div>
-      <i className="fas fa-ellipsis-v" />
+      {/* <i className="fas fa-ellipsis-v" /> */}
     </div>
 
     <div className="comment">
@@ -109,7 +109,7 @@ const UserComments = () => (
           <span>View reply</span>
         </div>
       </div>
-      <i className="fas fa-ellipsis-v" />
+      {/* <i className="fas fa-ellipsis-v" /> */}
     </div>
   </div>
 );

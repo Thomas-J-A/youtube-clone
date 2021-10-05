@@ -1,7 +1,7 @@
 import React from 'react';
 import VideoOptions from './VideoOptions';
 import MusicInfo from './MusicInfo';
-import uploaderProfilePic from '../../images/uploader-profile-pic.jpg';
+import uploaderProfilePic from '../../images/profile-pics/uploader-profile-pic.jpg';
 
 const VideoInfo = () => (
   <div className="video-info">
