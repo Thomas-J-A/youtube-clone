@@ -33,11 +33,15 @@ div.main-container {
 /* div.container-left */
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
   font-size: 1.3rem;
+  background-color: var(--white);
 }
 
 div.container-left {
@@ -273,11 +277,124 @@ div.music-info span {
   cursor: pointer;
 }
 
+
 /******** Comments ********/
 
 
 section.comments {
-  background-color: #0ff;
+  background-color: var(--light-grey);
+}
+
+div.comments-tools {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 1.5rem;
+}
+
+span.comments-count {
+  font-size: 1.2rem;
+  margin-right: 1.7rem;
+}
+
+div.comments-sort span{
+  margin-left: .5rem;
+  font-size: 1.1rem;
+}
+
+div.add-comment {
+  display: flex;
+  margin-bottom: 2.4rem;
+}
+
+div.add-comment div.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #5c6bc0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+div.add-comment input {
+  align-self: flex-start;
+  width: 100%;
+  margin-left: 1rem;
+  padding: 0 0 .6rem;
+  border: none;
+  border-bottom: 1px solid var(--grey);
+  background-color: transparent;
+  outline: none;
+}
+
+div.comment {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+div.comment img {
+  align-self: flex-start;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+div.comment span.username {
+  margin-right: .5rem;
+  font-weight: 800;
+}
+
+div.comment span.date {
+  font-size: .9rem;
+  color: var(--dark-grey);
+}
+
+div.comment div.username-date-wrapper {
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+div.comment p {
+  margin-bottom: 1rem;
+}
+
+div.comment i.fa-thumbs-up {
+  margin-right: .8rem;
+}
+
+div.comment i.fa-thumbs-down {
+  margin: 0 1.5rem 0 1.2rem;
+}
+
+div.comment i.fa-ellipsis-v {
+  align-self: flex-start;
+  margin: 1rem 0 0 auto;
+}
+
+div.comment div.view-replies {
+  margin-top: .8rem;
+  font-weight: 800;
+  color: #1c6dd7;
+}
+
+div.comment div.view-replies i.fa-caret-down {
+  margin-right: 1rem;
+}
+
+span.comments-count,
+div.comments-sort,
+div.comment img,
+div.comment span.username,
+div.comment i.fa-thumbs-up,
+div.comment i.fa-thumbs-down,
+div.comment span.reply,
+div.comment div.view-replies,
+div.comment i.fa-ellipsis-v {
+  cursor: pointer;
 }
 
 
@@ -286,4 +403,16 @@ section.comments {
 
 aside.sidebar {
   background-color: #00f;
+}
+
+
+
+
+
+
+/******** Misc ********/
+
+
+.show {
+  display: block;
 }
